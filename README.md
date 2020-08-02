@@ -1,5 +1,6 @@
 # role-policy-authorization-sample
-A sample application to demonstrate the implementation of Role based and Policy based Authorization in ASP.NET Core
+
+Let's talk about two important use cases of authorizing APIs basing on an user role defined by the system and authorizing a user basing on an incoming request claims from the user token.
 
 Read the complete article to learn more:
 
