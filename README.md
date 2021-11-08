@@ -17,6 +17,7 @@ The solution is a .NET 5 Web API project with seperated tiers for Web, Core and 
 * Clean Architecture with separated tiers for better encapsulation
 * Declared repositories for encapsulating the database logic
 * Demonstrated Requirements and Authorization Handlers
+* Mechanism to authenticate and generate JWT Token with Role claim
 * Updated to latest stable .NET 5 
 
 # Read the complete article to learn more:
