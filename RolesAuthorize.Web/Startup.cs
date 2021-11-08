@@ -3,9 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using RolesAuthorize.Contracts.Interfaces;
-using RolesAuthorize.Core.Providers.Repositories;
-using RolesAuthorize.Core.Providers;
 using RolesAuthorize.Core.Extensions;
 
 namespace RolesAuthorize.Web
