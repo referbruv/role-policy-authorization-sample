@@ -1,17 +1,14 @@
+using RolesAuthorize.Contracts.Interfaces;
+using RolesAuthorize.Contracts.Models;
 using System.Linq;
 
-namespace RolesAuthorizeApi.Providers.Auth
+namespace RolesAuthorize.Core.Providers.Repositories
 {
-    public interface IAuthRepo
-    {
-        AuthResult Authenticate(LoginModel credentials);
-    }
-
-    public class AuthRepo : IAuthRepo
+    public class AuthRepository : IAuthRepository
     {
         private ITokenManager _tokenManager;
 
-        public AuthRepo(ITokenManager tokenManager)
+        public AuthRepository(ITokenManager tokenManager)
         {
             _tokenManager = tokenManager;
         }
@@ -30,18 +27,6 @@ namespace RolesAuthorizeApi.Providers.Auth
             }
 
             return new AuthResult { IsSuccess = false };
-        }
-    }
-
-    public class ExtendedAuthRepo : AuthRepo
-    {
-        public ExtendedAuthRepo(ITokenManager tokenManager) : base(tokenManager)
-        {
-        }
-
-        public override AuthResult Authenticate(LoginModel credentials)
-        {
-            return base.Authenticate(credentials);
         }
     }
 }

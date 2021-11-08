@@ -1,4 +1,4 @@
-namespace RolesAuthorizeApi.Providers.Auth
+namespace RolesAuthorize.Contracts
 {
     public class TokenConstants
     {

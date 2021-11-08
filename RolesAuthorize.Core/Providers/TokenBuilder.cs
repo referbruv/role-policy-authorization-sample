@@ -5,7 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
-namespace RolesAuthorizeApi.Providers.Auth
+namespace RolesAuthorize.Core.Providers
 {
     public class TokenBuilder
     {

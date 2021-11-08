@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using RolesAuthorizeApi.Providers;
+using RolesAuthorize.Contracts.Models.User;
+using RolesAuthorize.Core.Providers;
 
-namespace RolesAuthorizeApi.Controllers
+namespace RolesAuthorize.Web.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

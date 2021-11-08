@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace RolesAuthorizeApi
+namespace RolesAuthorize.Web
 {
     public class Program
     {

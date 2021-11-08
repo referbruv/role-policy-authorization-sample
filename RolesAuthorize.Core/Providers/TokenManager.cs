@@ -1,15 +1,14 @@
+using RolesAuthorize.Contracts;
+using RolesAuthorize.Contracts.Interfaces;
+using RolesAuthorize.Contracts.Models;
+using RolesAuthorize.Contracts.Models.User;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace RolesAuthorizeApi.Providers.Auth
+namespace RolesAuthorize.Core.Providers
 {
-    public interface ITokenManager
-    {
-        AuthToken Generate(User user);
-    }
-
     public class TokenManager : ITokenManager
     {
         public AuthToken Generate(User user)

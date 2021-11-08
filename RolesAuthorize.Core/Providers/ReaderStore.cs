@@ -1,5 +1,6 @@
-namespace RolesAuthorizeApi.Providers
+namespace RolesAuthorize.Core.Providers
 {
+    using RolesAuthorize.Contracts.Models.User;
     using System.Collections.Generic;
 
     public class ReaderStore
